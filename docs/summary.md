@@ -1,5 +1,7 @@
 ﻿# Project Requirements Summary (docs)
 
+Quick links: [Tech Stack](./tech-stack.md) · [User Stories](./user-stories.md)
+
 ## Overview
 
 - Project: VOYAGE+ card program and member portal for Tam Son Yachting

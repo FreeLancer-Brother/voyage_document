@@ -1,5 +1,7 @@
 ﻿# Recommended Tech Stack
 
+Quick links: [Summary](./summary.md) · [User Stories](./user-stories.md)
+
 Next.js + TypeScript + Tailwind + PostgreSQL + Prisma + Supabase/Vercel.
 It’s fast to build, good UX, and easy to maintain.
 

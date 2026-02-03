@@ -9,6 +9,25 @@ Quick links: [Tech Stack](./tech-stack.md) · [User Stories](./user-stories.md)
 - Platforms: Web, responsive for mobile/desktop
 - Languages: VI | EN
 
+## Existing System Context
+
+- There is an existing website (e.g., abc.com) and an admin system for blog/employee management.
+- Plan: reuse the existing React admin codebase and add 3 new pages/modules (no new codebase unless backend limits).
+
+## Additional Context (Pages)
+
+- Pages to build: User Page, Admin Page, Member Page
+- User Page:
+  - Accessed via QR code on customer card with unique ID
+  - After scanning, redirect to login page
+  - After login, users can view benefits, rank, points
+- Admin Page:
+  - Used by employees to input score, choose benefit, and CRUD benefits for customers/members
+- Member Page:
+  - Extension module of existing admin (bonus module)
+  - Used by employees to manage customers/members (read-only)
+  - View points/score, benefits, active status, and offline status date
+
 ## Membership Program & Privileges
 
 - Card levels: Base (default), Gold (after USD 20,000 annual combined trips), Diamond (after USD 30,000)

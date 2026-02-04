@@ -1,6 +1,6 @@
 ﻿# Features and User Stories (Rally-style)
 
-Quick links: [Summary](./summary.md) · [Tech Stack](./tech-stack.md)
+Quick links: [Summary](./summary.md) · [Tech Stack](./tech-stack.md) · [Client Feedback](./client-feedback.md)
 
 ## Public Landing (SEO)
 
@@ -30,83 +30,59 @@ Quick links: [Summary](./summary.md) · [Tech Stack](./tech-stack.md)
 - US012 — View benefits: As a user, I can view my benefits after login.
 - US013 — View rank and points: As a user, I can view my rank and points after login.
 
-## Member Portal – Card Overview
+## User Dashboard – Core Sections
 
-- US014 — View card status: As a member, I can see card name and status (Base/Gold/Diamond).
-- US015 — View usage summary: As a member, I can see voyages completed and spending progress.
-- US016 — View last network booking: As a member, I can see last network booking details.
-
-## Member Portal – Charter Pricing
-
-- US017 — View pricing tiers: As a member, I see yacht pricing by card level.
-- US018 — Compare prices: As a member, I see pre- and post-discount prices.
-
-## Member Portal – Benefits
-
-- US019 — View current benefits: As a member, I can see benefits for my level.
-- US020 — Preview locked benefits: As a member, I can preview locked future benefits.
-
-## Member Portal – Voyage History
-
-- US021 — View trips: As a member, I can see trip list with date, yacht, route, type, and status.
-- US022 — View trip savings: As a member, I see savings for completed trips only.
-
-## Member Portal – Progress & Next Level
-
-- US023 — See upgrade gap: As a member, I see how much more to reach the next level.
-- US024 — Prompt next booking: As a member, I can click to book the next voyage.
-
-## Member Portal – Future Privileges
-
-- US025 — See future labels: As a member, I see greyed/labelled “Available at Gold/Diamond.”
-
-## Admin Access
-
-- US026 — Admin login: As an admin, I can log in to the admin dashboard.
-
-## Admin Quick Stats
-
-- US027 — View key stats: As an admin, I can see total cards, active cards, and newest bookings.
-- US028 — Open details: As an admin, I can open card list or booking details from stats.
-
-## Admin – Card Management
-
-- US029 — Create card serials: As an admin, I can create card serials.
-- US030 — Assign owners: As an admin, I can assign card owners.
-- US031 — Override status: As an admin, I can update card status manually.
-
-## Admin – Member Management
-
-- US032 — Manage members: As an admin, I can view and edit the member list.
-
-## Admin – Booking Management
-
-- US033 — Link bookings: As an admin, I can link bookings to card serial and booking type.
-
-## Admin – Pricing Management
-
-- US034 — Update pricing: As an admin, I can update charter pricing.
-
-## Admin – News/Notices
-
-- US035 — Manage notices: As an admin, I can create and edit news/notices.
-
-## Admin – Recent Activity
-
-- US036 — View activity: As an admin, I can view a 3-day activity timeline.
-
-## Admin – Navigation Modules
-
-- US037 — Navigate modules: As an admin, I can access Members/Benefits/Reports/Settings.
-
-## Admin – Points & Benefits
-
-- US038 — Input score: As an admin, I can input a customer/member score.
-- US039 — Choose benefit: As an admin, I can assign or choose a benefit for a customer/member.
-- US040 — CRUD benefits: As an admin, I can create, update, and delete benefit definitions.
+- US014 — View card status: As a user, I can see my current tier (Base/Gold/Diamond).
+- US015 — View current privileges: As a user, I can see benefits of my current tier.
+- US016 — View charter prices: As a user, I can see yacht pricing by tier.
+- US017 — View voyage history: As a user, I can see past trips with destination, yacht, date, spending.
+- US018 — View total spending: As a user, I can see total spending and remaining amount to next tier.
+- US019 — View next privileges: As a user, I can preview benefits of the next tier.
+- US020 — About Tam Son Yachting: As a user, I can read a short intro and open the main website.
 
 ## Member Page (Employee Read-only)
 
-- US041 — View member points: As an employee, I can view customer/member points/score.
-- US042 — View benefits: As an employee, I can view customer/member benefits.
-- US043 — View status: As an employee, I can view active status and offline status date.
+- US021 — View member points: As an employee, I can view customer/member points/score.
+- US022 — View member benefits: As an employee, I can view customer/member benefits.
+- US023 — View member status: As an employee, I can view active status and offline status date.
+
+## Admin Access
+
+- US024 — Admin login: As an admin, I can log in to the admin dashboard.
+
+## Admin Dashboard (Quick Overview)
+
+- US025 — View issued cards: As an admin, I can see total issued cards.
+- US026 — View active cards: As an admin, I can see how many cards are active (verified/logged in).
+- US027 — View weekly activity: As an admin, I can see bookings/voyages from the last week.
+
+## Admin – Members (Users & Cards)
+
+- US028 — View member list: As an admin, I can view members and their Serial ID, tier, status.
+- US029 — View spending split: As an admin, I can see spending split (owner vs network users).
+- US030 — View member history: As an admin, I can see trip history with booking type.
+- US031 — Create new card: As an admin, I can create new card serials.
+- US032 — Edit spending: As an admin, I can edit card spending when needed.
+- US033 — Update tier thresholds: As an admin, I can update tier spending requirements.
+- US034 — Deactivate card: As an admin, I can deactivate a card.
+
+## Admin – Benefits (Tiered Privileges)
+
+- US035 — Edit benefit content: As an admin, I can edit benefits by tier without dev changes.
+- US036 — Edit charter prices: As an admin, I can edit charter prices per tier.
+- US037 — Update next privileges: As an admin, I can update “Next privileges” shown to users.
+
+## Admin – Reports
+
+- US038 — Monthly spending: As an admin, I can view total spending by month.
+- US039 — Monthly voyages: As an admin, I can view bookings/voyages by month.
+- US040 — Tier upgrades: As an admin, I can see how many members reached Gold/Diamond.
+- US041 — Top members: As an admin, I can see top members by spending.
+- US042 — Export data: As an admin, I can export reports to Excel/CSV.
+
+## Admin – Settings
+
+- US043 — Manage tier thresholds: As an admin, I can set Gold/Diamond thresholds.
+- US044 — Manage language: As an admin, I can set VI/EN.
+- US045 — Manage website link: As an admin, I can update the Tam Son Yachting site link.
+- US046 — Manage admin accounts: As an admin, I can manage admin login/password.

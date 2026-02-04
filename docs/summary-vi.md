@@ -1,6 +1,6 @@
 ﻿# Tóm tắt yêu cầu dự án (docs)
 
-Liên kết nhanh: [Tech Stack](./tech-stack.md) · [User Stories](./user-stories.md)
+Liên kết nhanh: [Summary (EN)](./summary.md) · [Tech Stack](./tech-stack.md) · [User Stories](./user-stories.md) · [Client Feedback](./client-feedback.md)
 
 ## Tổng quan
 
@@ -13,6 +13,15 @@ Liên kết nhanh: [Tech Stack](./tech-stack.md) · [User Stories](./user-storie
 
 - Đã có website (ví dụ: abc.com) và hệ thống admin để quản lý blog/nhân sự...
 - Kế hoạch: tái sử dụng codebase admin React hiện tại và bổ sung 3 trang/module mới (không tạo codebase mới trừ khi backend bị giới hạn).
+
+## Làm rõ mới nhất từ khách hàng
+
+- Mỗi thẻ cứng có QR code và Serial ID riêng.
+- Luồng truy cập:
+  - Quét QR → Welcome Aboard
+  - Nhập Serial ID → User Dashboard
+- Mục tiêu User Dashboard: theo dõi trạng thái, quyền lợi, và thúc đẩy booking tiếp theo (không phải hệ thống booking phức tạp).
+- Admin: tập trung tính năng vận hành thẻ, tránh làm quá phức tạp.
 
 ## Thông tin bổ sung (Các trang)
 
@@ -88,58 +97,72 @@ Liên kết nhanh: [Tech Stack](./tech-stack.md) · [User Stories](./user-storie
 
 ## User Dashboard (Card Portal)
 
-### Card Overview
-- Card name, Card status (Base/Gold/Diamond)
-- Voyages completed (total)
-- Tiến độ chi tiêu so với mốc $20k / $30k
-- Last network booking (date + yacht)
-- Progress indicator (vd: “x VND to reach Gold”)
+### Mục tiêu chính
+
+- Theo dõi trạng thái thẻ
+- Hiển thị quyền lợi hiện tại
+- Thúc đẩy tiếp tục booking charter
+
+### Card Status
+- Hạng thẻ hiện tại: Base / Gold / Diamond
+
+### Current Privileges
+- Quyền lợi theo hạng thẻ hiện tại
 
 ### Charter Price
-- Bảng giá thuê theo cấp thẻ
-- Hiển thị giá trước và sau giảm
-- Áp dụng cho Owners & Network users
-
-### Card Benefits
-- Base: giảm 10%
-- Gold: giảm 15%, ưu tiên booking, invitation-only preview
-- Diamond: giữ quyền lợi Gold + dịch vụ onboard (+30 mins), partner benefits
-- UI checklist theo level; level cao bị khóa/grey nếu chưa đạt
+- Giá thuê du thuyền theo hạng
+- Admin có thể chỉnh thủ công
 
 ### Voyage History
-- Mỗi trip: ngày, tàu, route, loại booking (Self/Referral), trạng thái
-- Hiển thị tiết kiệm cho trip Completed (vd: “You saved X VND”)
+- Lịch sử chuyến đi (destination, yacht, date, spending)
 
-### Progress & Next Level
-- Hiển thị số tiền cần để lên hạng tiếp theo (không dùng từ “tích lũy”)
-- CTA: Book next voyage, View benefits at next level
+### Total Spending (to date)
+- Tổng chi tiêu hiện tại
+- Số tiền còn lại để lên hạng tiếp theo
 
-### Future Privileges
-- Teaser quyền lợi tương lai; greyed/label “Available at Gold/Diamond”
-- Copy về ngưỡng chi tiêu và quyền lợi mở dần
+### Next Privileges
+- Quyền lợi hạng cao hơn (Gold / Diamond)
+- Mục đích tạo động lực nâng hạng
 
-### About TSY
-- CTA: truy cập website Tam Son Yachting
+### About Tam Son Yachting
+- Giới thiệu ngắn + link về website chính
 
 ## Admin Dashboard
 
-### Quick Stats
-- Total cards, Active cards, Newest bookings (kèm Card ID)
-- Tap mở card list hoặc booking detail (mobile-friendly)
+### Dashboard (Tổng quan nhanh)
+- Tổng số thẻ đã issue (admin tạo serial trước)
+- Số thẻ đã active (đã nhập serial và login)
+- Booking/voyage trong 1 tuần vừa qua
 
-### Primary Actions
-- Update giá charter
-- View/Edit/Update member list (owner + khách mượn thẻ)
-- Card status management (add/edit/delete)
-- Post news/notices
+### Members (Users & Cards)
+- Serial ID
+- Hạng thẻ hiện tại (Base / Gold / Diamond)
+- Tổng spending (tách owner vs network users)
+- Lịch sử chuyến đi (destination, yacht, date, booking type)
+- Trạng thái thẻ: active / inactive
+- Admin có thể:
+  - Tạo thẻ mới
+  - Update yêu cầu chi tiêu hạng thẻ
+  - Edit spending thẻ
+  - Deactivate thẻ
 
-### Recent Activity
-- Timeline 3 ngày gần nhất: new member, new booking, card status updated
-- Scrollable, tap xem chi tiết
+### Benefits (Quản lý quyền lợi)
+- Admin chỉnh quyền lợi theo hạng không cần dev sửa code
+- Admin chỉnh giá charter theo hạng
+- Admin cập nhật “Next privileges” hiển thị cho User
 
-### Modules Navigation
-- Members, Benefits, Reports, Settings
-- Layout grid hoặc sidebar; icon rõ, nhãn ngắn, nhất quán
+### Reports
+- Tổng spending theo tháng
+- Số booking/voyage theo tháng
+- Số khách lên Gold / Diamond
+- Top members theo spending
+- Export dữ liệu (Excel/CSV)
+
+### Settings
+- Mức lên hạng: Gold sau USD 20,000; Diamond sau USD 30,000
+- Ngôn ngữ (VI / EN)
+- Link về website Tam Sơn Yachting
+- Tài khoản admin (login/password)
 
 ## Định hướng thiết kế
 

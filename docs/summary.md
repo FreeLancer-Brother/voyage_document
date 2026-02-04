@@ -1,6 +1,6 @@
 ﻿# Project Requirements Summary (docs)
 
-Quick links: [Tech Stack](./tech-stack.md) · [User Stories](./user-stories.md)
+Quick links: [Summary (VI)](./summary-vi.md) · [Tech Stack](./tech-stack.md) · [User Stories](./user-stories.md) · [Client Feedback](./client-feedback.md)
 
 ## Overview
 
@@ -13,6 +13,15 @@ Quick links: [Tech Stack](./tech-stack.md) · [User Stories](./user-stories.md)
 
 - There is an existing website (e.g., abc.com) and an admin system for blog/employee management.
 - Plan: reuse the existing React admin codebase and add 3 new pages/modules (no new codebase unless backend limits).
+
+## Latest Client Clarifications
+
+- Each physical card has a QR code and a unique Serial ID.
+- Access flow:
+  - Scan QR → Welcome Aboard page
+  - Enter Serial ID → User Dashboard
+- User Dashboard purpose: track status, see benefits, and encourage future charter bookings (not a complex booking system).
+- Admin focus: keep features essential for card operations (not overly complex).
 
 ## Additional Context (Pages)
 
@@ -88,58 +97,72 @@ Quick links: [Tech Stack](./tech-stack.md) · [User Stories](./user-stories.md)
 
 ## User Dashboard (Card Portal)
 
-### Card Overview
-- Card name, Card status (Base/Gold/Diamond)
-- Voyages completed (total)
-- Booking spending progress toward $20k / $30k
-- Last network booking (date + yacht)
-- Progress indicator (e.g., “x VND to reach Gold”)
+### Core Purpose
+
+- Track card status
+- Show current privileges
+- Encourage continued charter bookings
+
+### Card Status
+- Current tier: Base / Gold / Diamond
+
+### Current Privileges
+- Benefits corresponding to current tier
 
 ### Charter Price
-- Table of yacht prices by card level
-- Show pre-discount and post-discount price
-- Applies to Owners & Network users
-
-### Card Benefits
-- Base: 10% charter rate
-- Gold: 15% charter rate, priority booking, invitation-only previews
-- Diamond: all Gold + onboard services (+30 mins), partner benefits
-- UI checklist by level; lock/greyed future levels
+- Yacht pricing by tier
+- Admin can manually edit
 
 ### Voyage History
-- Each trip: date, yacht model, route, booking type (Self/Referral), status
-- Show savings per completed trip (e.g., “You saved X VND”)
+- Past trips (destination, yacht, date, spending)
 
-### Progress & Next Level
-- Show remaining spending to next tier (avoid “accumulation” wording)
-- CTAs: Book next voyage, View next-level benefits
+### Total Spending (to date)
+- Current total spending
+- Remaining amount to reach next tier
 
-### Future Privileges
-- Public teaser content; greyed/labelled “Available at Gold/Diamond”
-- Copy about thresholds and evolving benefits
+### Next Privileges
+- Benefits of next tier (Gold / Diamond)
+- Motivational display
 
-### About TSY
-- CTA to visit Tam Son Yachting website
+### About Tam Son Yachting
+- Short introduction and link to main site
 
 ## Admin Dashboard
 
-### Quick Stats
-- Total cards, Active cards, Newest bookings (with card ID)
-- Taps open card list or booking detail (mobile-friendly)
+### Dashboard (Quick Overview)
+- Total issued cards (serials created in advance)
+- Active cards count (cards that have been verified/logged in)
+- Bookings/voyages in the last week
 
-### Primary Actions
-- Update charter pricing
-- View/Edit/Update member list (owner + referral guests)
-- Card status management (add/edit/delete)
-- Post news/notices
+### Members (Users & Cards)
+- Serial ID
+- Current tier (Base / Gold / Diamond)
+- Total spending (split owner vs network users)
+- Voyage history (destination, yacht, date, booking type)
+- Card status: active / inactive
+- Admin actions:
+  - Create new card
+  - Update tier thresholds
+  - Edit card spending
+  - Deactivate card
 
-### Recent Activity
-- List/timeline of last 3 days: new member, new booking, card status updated
-- Scrollable, tap to view detail
+### Benefits (Tiered Privileges)
+- Admin edits tier benefits without dev changes
+- Admin can edit charter prices by tier
+- Admin can update “Next privileges” shown to users
 
-### Modules Navigation
-- Members, Benefits, Reports, Settings
-- Grid or sidebar layout; clear consistent icons
+### Reports
+- Total spending by month
+- Total bookings/voyages by month
+- Count of members reaching Gold/Diamond
+- Top members by spending
+- Export data (Excel/CSV)
+
+### Settings
+- Tier thresholds: Gold after USD 20,000; Diamond after USD 30,000
+- Language (VI / EN)
+- Link to Tam Son Yachting website
+- Admin accounts (login/password)
 
 ## Design Direction
 

@@ -12,7 +12,7 @@ Liên kết nhanh: [Summary (EN)](./summary.md) · [Tech Stack](./tech-stack.md)
 ## Bối cảnh hệ thống hiện tại
 
 - Đã có website (ví dụ: abc.com) và hệ thống admin để quản lý blog/nhân sự...
-- Kế hoạch: tái sử dụng codebase admin React hiện tại và bổ sung 3 trang/module mới (không tạo codebase mới trừ khi backend bị giới hạn).
+- Kế hoạch: tái sử dụng codebase admin React hiện tại và bổ sung trang/module mới (không tạo codebase mới trừ khi backend bị giới hạn).
 
 ## Làm rõ mới nhất từ khách hàng
 
@@ -23,19 +23,16 @@ Liên kết nhanh: [Summary (EN)](./summary.md) · [Tech Stack](./tech-stack.md)
 - Mục tiêu User Dashboard: theo dõi trạng thái, quyền lợi, và thúc đẩy booking tiếp theo (không phải hệ thống booking phức tạp).
 - Admin: tập trung tính năng vận hành thẻ, tránh làm quá phức tạp.
 
-## Thông tin bổ sung (Các trang)
+## Các trang cần làm
 
-- Các trang cần làm: User Page, Admin Page, Member Page
 - User Page:
   - Truy cập qua QR code trên thẻ khách hàng với ID duy nhất
   - Sau khi quét, chuyển đến trang đăng nhập
   - Sau khi đăng nhập, người dùng xem quyền lợi, hạng, điểm
 - Admin Page:
   - Nhân viên nhập điểm/score, chọn quyền lợi, CRUD quyền lợi cho khách hàng/thành viên
-- Member Page:
-  - Module mở rộng của admin hiện tại (bonus module)
-  - Nhân viên quản lý khách hàng/thành viên (chỉ xem)
-  - Xem điểm/score, quyền lợi, trạng thái active, ngày offline
+
+Ghi chú: Không làm trang Member riêng; dùng quyền read-only trong module Members của Admin.
 
 ## Chương trình & quyền lợi
 
@@ -163,6 +160,7 @@ Liên kết nhanh: [Summary (EN)](./summary.md) · [Tech Stack](./tech-stack.md)
 - Ngôn ngữ (VI / EN)
 - Link về website Tam Sơn Yachting
 - Tài khoản admin (login/password)
+- Quyền read-only cho staff (thay cho trang Member riêng)
 
 ## Định hướng thiết kế
 

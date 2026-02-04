@@ -12,7 +12,7 @@ Quick links: [Summary (VI)](./summary-vi.md) · [Tech Stack](./tech-stack.md) ·
 ## Existing System Context
 
 - There is an existing website (e.g., abc.com) and an admin system for blog/employee management.
-- Plan: reuse the existing React admin codebase and add 3 new pages/modules (no new codebase unless backend limits).
+- Plan: reuse the existing React admin codebase and add new pages/modules (no new codebase unless backend limits).
 
 ## Latest Client Clarifications
 
@@ -23,19 +23,16 @@ Quick links: [Summary (VI)](./summary-vi.md) · [Tech Stack](./tech-stack.md) ·
 - User Dashboard purpose: track status, see benefits, and encourage future charter bookings (not a complex booking system).
 - Admin focus: keep features essential for card operations (not overly complex).
 
-## Additional Context (Pages)
+## Pages to Build
 
-- Pages to build: User Page, Admin Page, Member Page
 - User Page:
   - Accessed via QR code on customer card with unique ID
   - After scanning, redirect to login page
   - After login, users can view benefits, rank, points
 - Admin Page:
   - Used by employees to input score, choose benefit, and CRUD benefits for customers/members
-- Member Page:
-  - Extension module of existing admin (bonus module)
-  - Used by employees to manage customers/members (read-only)
-  - View points/score, benefits, active status, and offline status date
+
+Note: Separate Member Page is removed; use read-only permissions in Admin “Members” module instead.
 
 ## Membership Program & Privileges
 
@@ -163,6 +160,7 @@ Quick links: [Summary (VI)](./summary-vi.md) · [Tech Stack](./tech-stack.md) ·
 - Language (VI / EN)
 - Link to Tam Son Yachting website
 - Admin accounts (login/password)
+- Read-only role for staff (to replace separate Member Page)
 
 ## Design Direction
 

@@ -40,49 +40,44 @@ Quick links: [Summary](./summary.md) · [Tech Stack](./tech-stack.md) · [Client
 - US019 — View next privileges: As a user, I can preview benefits of the next tier.
 - US020 — About Tam Son Yachting: As a user, I can read a short intro and open the main website.
 
-## Member Page (Employee Read-only)
-
-- US021 — View member points: As an employee, I can view customer/member points/score.
-- US022 — View member benefits: As an employee, I can view customer/member benefits.
-- US023 — View member status: As an employee, I can view active status and offline status date.
-
 ## Admin Access
 
-- US024 — Admin login: As an admin, I can log in to the admin dashboard.
+- US021 — Admin login: As an admin, I can log in to the admin dashboard.
 
 ## Admin Dashboard (Quick Overview)
 
-- US025 — View issued cards: As an admin, I can see total issued cards.
-- US026 — View active cards: As an admin, I can see how many cards are active (verified/logged in).
-- US027 — View weekly activity: As an admin, I can see bookings/voyages from the last week.
+- US022 — View issued cards: As an admin, I can see total issued cards.
+- US023 — View active cards: As an admin, I can see how many cards are active (verified/logged in).
+- US024 — View weekly activity: As an admin, I can see bookings/voyages from the last week.
 
 ## Admin – Members (Users & Cards)
 
-- US028 — View member list: As an admin, I can view members and their Serial ID, tier, status.
-- US029 — View spending split: As an admin, I can see spending split (owner vs network users).
-- US030 — View member history: As an admin, I can see trip history with booking type.
-- US031 — Create new card: As an admin, I can create new card serials.
-- US032 — Edit spending: As an admin, I can edit card spending when needed.
-- US033 — Update tier thresholds: As an admin, I can update tier spending requirements.
-- US034 — Deactivate card: As an admin, I can deactivate a card.
+- US025 — View member list: As an admin, I can view members and their Serial ID, tier, status.
+- US026 — View spending split: As an admin, I can see spending split (owner vs network users).
+- US027 — View member history: As an admin, I can see trip history with booking type.
+- US028 — Create new card: As an admin, I can create new card serials.
+- US029 — Edit spending: As an admin, I can edit card spending when needed.
+- US030 — Update tier thresholds: As an admin, I can update tier spending requirements.
+- US031 — Deactivate card: As an admin, I can deactivate a card.
+- US032 — Read-only access: As a staff user, I can view members in read-only mode.
 
 ## Admin – Benefits (Tiered Privileges)
 
-- US035 — Edit benefit content: As an admin, I can edit benefits by tier without dev changes.
-- US036 — Edit charter prices: As an admin, I can edit charter prices per tier.
-- US037 — Update next privileges: As an admin, I can update “Next privileges” shown to users.
+- US033 — Edit benefit content: As an admin, I can edit benefits by tier without dev changes.
+- US034 — Edit charter prices: As an admin, I can edit charter prices per tier.
+- US035 — Update next privileges: As an admin, I can update “Next privileges” shown to users.
 
 ## Admin – Reports
 
-- US038 — Monthly spending: As an admin, I can view total spending by month.
-- US039 — Monthly voyages: As an admin, I can view bookings/voyages by month.
-- US040 — Tier upgrades: As an admin, I can see how many members reached Gold/Diamond.
-- US041 — Top members: As an admin, I can see top members by spending.
-- US042 — Export data: As an admin, I can export reports to Excel/CSV.
+- US036 — Monthly spending: As an admin, I can view total spending by month.
+- US037 — Monthly voyages: As an admin, I can view bookings/voyages by month.
+- US038 — Tier upgrades: As an admin, I can see how many members reached Gold/Diamond.
+- US039 — Top members: As an admin, I can see top members by spending.
+- US040 — Export data: As an admin, I can export reports to Excel/CSV.
 
 ## Admin – Settings
 
-- US043 — Manage tier thresholds: As an admin, I can set Gold/Diamond thresholds.
-- US044 — Manage language: As an admin, I can set VI/EN.
-- US045 — Manage website link: As an admin, I can update the Tam Son Yachting site link.
-- US046 — Manage admin accounts: As an admin, I can manage admin login/password.
+- US041 — Manage tier thresholds: As an admin, I can set Gold/Diamond thresholds.
+- US042 — Manage language: As an admin, I can set VI/EN.
+- US043 — Manage website link: As an admin, I can update the Tam Son Yachting site link.
+- US044 — Manage admin accounts: As an admin, I can manage admin login/password.

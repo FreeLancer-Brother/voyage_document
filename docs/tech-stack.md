@@ -11,7 +11,7 @@ Quick links: [Summary](./summary.md) · [User Stories](./user-stories.md) · [Cl
 - Styled Components + Bootstrap (existing)
 - Axios, Moment, CKEditor
 
-Plan: reuse the existing React admin codebase and add new pages/modules (no separate Member Page).
+Plan: reuse the existing React admin codebase and add new pages/modules.
 
 ## Time Estimate (Standard Scope)
 
@@ -32,7 +32,7 @@ Plan: reuse the existing React admin codebase and add new pages/modules (no sepa
 - Admin dashboard (quick overview + members): 34–50 hrs → 12–17 days
 - Admin benefits management (edit benefits/prices/next privileges): 18–28 hrs → 6–10 days
 - Reports + export (monthly stats, tier upgrades, CSV/Excel): 18–28 hrs → 6–10 days
-- Settings (thresholds, language, website link, admin accounts, read-only role): 14–22 hrs → 5–8 days
+- Settings (thresholds, language, website link, admin accounts): 12–20 hrs → 4–7 days
 - API + DB (cards, users, bookings, status, pricing, points/benefits): 40–60 hrs → 14–20 days
 - QA + bug fix + feedback rounds: 22–32 hrs → 8–11 days
 - Deployment + handoff: 6–10 hrs → 2–4 days

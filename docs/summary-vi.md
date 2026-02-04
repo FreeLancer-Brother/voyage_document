@@ -32,8 +32,6 @@ Liên kết nhanh: [Summary (EN)](./summary.md) · [Tech Stack](./tech-stack.md)
 - Admin Page:
   - Nhân viên nhập điểm/score, chọn quyền lợi, CRUD quyền lợi cho khách hàng/thành viên
 
-Ghi chú: Không làm trang Member riêng; dùng quyền read-only trong module Members của Admin.
-
 ## Chương trình & quyền lợi
 
 - Cấp thẻ: Base (mặc định), Gold (sau USD 20,000 chi tiêu/năm), Diamond (sau USD 30,000)
@@ -160,7 +158,6 @@ Ghi chú: Không làm trang Member riêng; dùng quyền read-only trong module 
 - Ngôn ngữ (VI / EN)
 - Link về website Tam Sơn Yachting
 - Tài khoản admin (login/password)
-- Quyền read-only cho staff (thay cho trang Member riêng)
 
 ## Định hướng thiết kế
 

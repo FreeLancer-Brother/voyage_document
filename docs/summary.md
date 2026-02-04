@@ -32,8 +32,6 @@ Quick links: [Summary (VI)](./summary-vi.md) · [Tech Stack](./tech-stack.md) ·
 - Admin Page:
   - Used by employees to input score, choose benefit, and CRUD benefits for customers/members
 
-Note: Separate Member Page is removed; use read-only permissions in Admin “Members” module instead.
-
 ## Membership Program & Privileges
 
 - Card levels: Base (default), Gold (after USD 20,000 annual combined trips), Diamond (after USD 30,000)
@@ -160,7 +158,6 @@ Note: Separate Member Page is removed; use read-only permissions in Admin “Mem
 - Language (VI / EN)
 - Link to Tam Son Yachting website
 - Admin accounts (login/password)
-- Read-only role for staff (to replace separate Member Page)
 
 ## Design Direction
 

@@ -4,14 +4,11 @@ Quick links: [Summary](./summary.md) · [User Stories](./user-stories.md) · [Cl
 
 ## Current System Stack (Reuse)
 
-- React 17 (Create React App)
-- Ant Design 4
-- React Router 6
-- Redux Toolkit
-- Styled Components + Bootstrap (existing)
-- Axios, Moment, CKEditor
+- Admin: React 17 (Create React App), Ant Design 4, React Router, Redux Toolkit
+- Frontend site: Nuxt 2 (Vue)
+- API: NestJS 8 + MongoDB (Mongoose) + JWT auth + CSV export
 
-Plan: reuse the existing React admin codebase and add new pages/modules.
+Plan: reuse existing FE/Admin/API and add new pages/modules.
 
 ## Time Estimate (Standard Scope)
 

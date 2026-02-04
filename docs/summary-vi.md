@@ -11,8 +11,11 @@ Liên kết nhanh: [Summary (EN)](./summary.md) · [Tech Stack](./tech-stack.md)
 
 ## Bối cảnh hệ thống hiện tại
 
-- Đã có website (ví dụ: abc.com) và hệ thống admin để quản lý blog/nhân sự...
-- Kế hoạch: tái sử dụng codebase admin React hiện tại và bổ sung trang/module mới (không tạo codebase mới trừ khi backend bị giới hạn).
+- Codebase hiện tại tại `D:\Freelancer\tamson-project\www` gồm:
+  - Admin: React 17 (CRA) + Ant Design + Redux
+  - Frontend site: Nuxt 2 (Vue)
+  - API: NestJS + MongoDB (Mongoose) + JWT auth + export CSV
+- Kế hoạch: tái sử dụng FE/Admin/API và bổ sung trang/module mới (không tạo codebase mới trừ khi backend bị giới hạn).
 
 ## Làm rõ mới nhất từ khách hàng
 

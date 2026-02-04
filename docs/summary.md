@@ -11,8 +11,11 @@ Quick links: [Summary (VI)](./summary-vi.md) · [Tech Stack](./tech-stack.md) ·
 
 ## Existing System Context
 
-- There is an existing website (e.g., abc.com) and an admin system for blog/employee management.
-- Plan: reuse the existing React admin codebase and add new pages/modules (no new codebase unless backend limits).
+- Current codebase at `D:\Freelancer\tamson-project\www` includes:
+  - Admin: React 17 (CRA) + Ant Design + Redux
+  - Frontend site: Nuxt 2 (Vue)
+  - API: NestJS + MongoDB (Mongoose) + JWT auth + CSV export
+- Plan: reuse existing FE/Admin/API and add new pages/modules (no new codebase unless backend limits).
 
 ## Latest Client Clarifications
 
